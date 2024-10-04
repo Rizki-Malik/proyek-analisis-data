@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 
 customers_df = pd.read_csv('./data/customers_dataset.csv')
 geolocation_df = pd.read_csv('./data/geolocation_dataset.csv')
