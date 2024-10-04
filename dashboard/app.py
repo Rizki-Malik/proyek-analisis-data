@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-customers_df = pd.read_csv('./data/customers_dataset.csv')
-geolocation_df = pd.read_csv('./data/geolocation_dataset.csv')
+customers_df = pd.read_csv('../data/customers_dataset.csv')
+geolocation_df = pd.read_csv('../data/geolocation_dataset.csv')
 
 customers_geo = pd.merge(customers_df, geolocation_df, left_on='customer_zip_code_prefix', right_on='geolocation_zip_code_prefix', how='left')
 
